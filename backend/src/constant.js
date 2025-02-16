@@ -1,1 +1,1 @@
-export const DB_NAME="ratnagiriTourism"
+export const DB_NAME="tourismManagement";

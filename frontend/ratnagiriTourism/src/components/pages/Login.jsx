@@ -24,11 +24,9 @@ function Login() {
     try {
       const response=await axios
       .post("/api/v1/users/login",formData)
-      // console.log(object)
       
-      console.log();
+      console.log(response.data)
      if(response.data.success===true){
-      sessionStorage.setItem("userId", response.data.message.user._id)
       alert("Login Successful! 🎉");
       navigate("/"); // Redirect to home after login
      }else{
